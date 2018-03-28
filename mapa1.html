@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GRASP P-MED - Visualização dos Pontos no Mapa</title>
+    <style>
+		html {
+			height: 100%;
+		}
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		#map-canvas {
+			height: 100%;
+		}
+		#iw_container .iw_title {
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.iw_content {
+			padding: 15px 15px 15px 0;
+		}
+
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=visualization"></script>
+    <script>
+
+	// Váriáveis necessárias
+	var map;
+	var infoWindow;
+
+	// A variável markersData guarda a informação necessária a cada marcador
+	// Para utilizar este código basta alterar a informação contida nesta variável
+	var markersData = [
